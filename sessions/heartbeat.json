@@ -1,0 +1,39 @@
+{
+  "key": "heartbeat",
+  "messages": [
+    {
+      "role": "user",
+      "content": "# Heartbeat Check\n\nCurrent time: 2026-02-21 20:38:26\n\nYou are a proactive AI assistant. This is a scheduled heartbeat check.\nReview the following tasks and execute any necessary actions using available skills.\nIf there is nothing that requires attention, respond ONLY with: HEARTBEAT_OK\n\n# Heartbeat Check List\n\nThis file contains tasks for the heartbeat service to check periodically.\n\n## Examples\n\n- Check for unread messages\n- Review upcoming calendar events\n- Check device status (e.g., MaixCam)\n\n## Instructions\n\n- Execute ALL tasks listed below. Do NOT skip any task.\n- For simple tasks (e.g., report current time), respond directly.\n- For complex tasks that may take time, use the spawn tool to create a subagent.\n- The spawn tool is async - subagent results will be sent to the user automatically.\n- After spawning a subagent, CONTINUE to process remaining tasks.\n- Only respond with HEARTBEAT_OK when ALL tasks are done AND nothing needs attention.\n\n---\n\nAdd your heartbeat tasks below this line:\n\n"
+    },
+    {
+      "role": "assistant",
+      "content": "HEARTBEAT_OK"
+    },
+    {
+      "role": "user",
+      "content": "# Heartbeat Check\n\nCurrent time: 2026-02-21 20:42:13\n\nYou are a proactive AI assistant. This is a scheduled heartbeat check.\nReview the following tasks and execute any necessary actions using available skills.\nIf there is nothing that requires attention, respond ONLY with: HEARTBEAT_OK\n\n# Heartbeat Check List\n\nThis file contains tasks for the heartbeat service to check periodically.\n\n## Examples\n\n- Check for unread messages\n- Review upcoming calendar events\n- Check device status (e.g., MaixCam)\n\n## Instructions\n\n- Execute ALL tasks listed below. Do NOT skip any task.\n- For simple tasks (e.g., report current time), respond directly.\n- For complex tasks that may take time, use the spawn tool to create a subagent.\n- The spawn tool is async - subagent results will be sent to the user automatically.\n- After spawning a subagent, CONTINUE to process remaining tasks.\n- Only respond with HEARTBEAT_OK when ALL tasks are done AND nothing needs attention.\n\n---\n\nAdd your heartbeat tasks below this line:\n\n"
+    },
+    {
+      "role": "assistant",
+      "content": "HEARTBEAT_OK"
+    },
+    {
+      "role": "user",
+      "content": "# Heartbeat Check\n\nCurrent time: 2026-02-21 20:54:19\n\nYou are a proactive AI assistant. This is a scheduled heartbeat check.\nReview the following tasks and execute any necessary actions using available skills.\nIf there is nothing that requires attention, respond ONLY with: HEARTBEAT_OK\n\n# HEARTBEAT.md\n\n# Keep this file empty (or with only comments) to skip heartbeat API calls.\n# Add tasks below when you want the agent to check something periodically.\n\n"
+    },
+    {
+      "role": "assistant",
+      "content": "HEARTBEAT_OK"
+    },
+    {
+      "role": "user",
+      "content": "# Heartbeat Check\n\nCurrent time: 2026-02-21 20:56:11\n\nYou are a proactive AI assistant. This is a scheduled heartbeat check.\nReview the following tasks and execute any necessary actions using available skills.\nIf there is nothing that requires attention, respond ONLY with: HEARTBEAT_OK\n\n# HEARTBEAT.md\n\n# Keep this file empty (or with only comments) to skip heartbeat API calls.\n# Add tasks below when you want the agent to check something periodically.\n\n"
+    },
+    {
+      "role": "assistant",
+      "content": "HEARTBEAT_OK"
+    }
+  ],
+  "created": "2026-02-21T20:38:26.487283988Z",
+  "updated": "2026-02-21T20:56:12.322061598Z"
+}

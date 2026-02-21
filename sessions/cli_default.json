@@ -1,0 +1,15 @@
+{
+  "key": "cli:default",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Olá, responde em português de Portugal."
+    },
+    {
+      "role": "assistant",
+      "content": "Olá! Entendido. A partir de agora, responderei em português de Portugal. Como posso ajudar?"
+    }
+  ],
+  "created": "2026-02-21T20:30:27.737246448Z",
+  "updated": "2026-02-21T20:30:28.518968698Z"
+}
