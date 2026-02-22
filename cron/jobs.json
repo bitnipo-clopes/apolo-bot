@@ -17,9 +17,7 @@
         "channel": "telegram",
         "to": "263042058"
       },
-      "state": {
-        "nextRunAtMs": 1771732800000
-      },
+      "state": {},
       "createdAtMs": 1771708453609,
       "updatedAtMs": 1771708453610,
       "deleteAfterRun": false
