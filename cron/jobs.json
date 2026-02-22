@@ -1,4 +1,51 @@
 {
   "version": 1,
-  "jobs": []
+  "jobs": [
+    {
+      "id": "58ceb939f27d5cc1",
+      "name": "Backup diário do workspace ...",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 4 * * *"
+      },
+      "payload": {
+        "kind": "agent_turn",
+        "message": "Backup diário do workspace para o GitHub",
+        "command": "cd /home/clopes/.picoclaw/workspace \u0026\u0026 git add . \u0026\u0026 git commit -m \"Rotina diária de backup do workspace para o GitHub\" \u0026\u0026 git push origin main",
+        "deliver": false,
+        "channel": "telegram",
+        "to": "263042058"
+      },
+      "state": {
+        "nextRunAtMs": 1771732800000
+      },
+      "createdAtMs": 1771708453609,
+      "updatedAtMs": 1771708453610,
+      "deleteAfterRun": false
+    },
+    {
+      "id": "5b18d62bb11cbfd1",
+      "name": "Backup diário do workspace ...",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "expr": "5 4 * * *"
+      },
+      "payload": {
+        "kind": "agent_turn",
+        "message": "Backup diário do workspace para a Pen USB",
+        "command": "cp -r /home/clopes/.picoclaw/workspace /mnt/storage/picoclaw-backup",
+        "deliver": false,
+        "channel": "telegram",
+        "to": "263042058"
+      },
+      "state": {
+        "nextRunAtMs": 1771733100000
+      },
+      "createdAtMs": 1771708455298,
+      "updatedAtMs": 1771708455298,
+      "deleteAfterRun": false
+    }
+  ]
 }
