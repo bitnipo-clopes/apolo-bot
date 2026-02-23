@@ -14,6 +14,6 @@ Este ficheiro documenta as rotinas automatizadas e o estado de saúde do Apolo.
 
 ## Estado de Saúde
 
-- **Última Verificação:** 2026-02-22 02:26 (Domingo)
+- **Última Verificação:** 2026-02-23 03:56 (Segunda-feira)
 - **Status:** Operacional
 - **Observações:** Todas as rotinas agendadas estão ativas e a funcionar como esperado.
