@@ -11,6 +11,7 @@ Este ficheiro documenta as rotinas automatizadas e o estado de saúde do Apolo.
 - **Backup Diário do Workspace para a Pen USB:** `cp -r /home/clopes/.picoclaw/workspace /mnt/storage/picoclaw-backup`
   - **Frequência:** Diariamente às 04:05
   - **ID da Tarefa Cron:** `5b18d62bb11cbfd1`
+  - **Estado:** Falhou devido a permissões de escrita em `/mnt/storage/picoclaw-backup`
 
 ## Estado de Saúde
 

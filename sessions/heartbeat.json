@@ -9174,8 +9174,111 @@
     {
       "role": "assistant",
       "content": "HEARTBEAT_OK"
+    },
+    {
+      "role": "user",
+      "content": "# Heartbeat Check\n\nCurrent time: 2026-02-25 04:26:10\n\nYou are a proactive AI assistant. This is a scheduled heartbeat check.\nReview the following tasks and execute any necessary actions using available skills.\nIf there is nothing that requires attention, respond ONLY with: HEARTBEAT_OK\n\n# HEARTBEAT.md\n\nEste ficheiro documenta as rotinas automatizadas e o estado de saúde do Apolo.\n\n## Rotinas de Backup\n\n- **Backup Diário do Workspace para o GitHub:** `cd /home/clopes/.picoclaw/workspace \u0026\u0026 git add . \u0026\u0026 git commit -m \"Rotina diária de backup do workspace para o GitHub\" \u0026\u0026 git push origin main`\n  - **Frequência:** Diariamente às 04:00\n  - **ID da Tarefa Cron:** `58ceb939f27d5cc1`\n\n- **Backup Diário do Workspace para a Pen USB:** `cp -r /home/clopes/.picoclaw/workspace /mnt/storage/picoclaw-backup`\n  - **Frequência:** Diariamente às 04:05\n  - **ID da Tarefa Cron:** `5b18d62bb11cbfd1`\n\n## Estado de Saúde\n\n- **Última Verificação:** 2026-02-25 03:56:10 (Quarta-feira)\n- **Status:** Operacional\n- **Observações:** Todas as rotinas agendadas estão ativas e a funcionar como esperado.\n\n"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "function-call-4340956010693395924",
+          "type": "function",
+          "function": {
+            "name": "read_file",
+            "arguments": "{\"path\":\"/home/clopes/.picoclaw/workspace/HEARTBEAT.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "# HEARTBEAT.md\n\nEste ficheiro documenta as rotinas automatizadas e o estado de saúde do Apolo.\n\n## Rotinas de Backup\n\n- **Backup Diário do Workspace para o GitHub:** `cd /home/clopes/.picoclaw/workspace \u0026\u0026 git add . \u0026\u0026 git commit -m \"Rotina diária de backup do workspace para o GitHub\" \u0026\u0026 git push origin main`\n  - **Frequência:** Diariamente às 04:00\n  - **ID da Tarefa Cron:** `58ceb939f27d5cc1`\n\n- **Backup Diário do Workspace para a Pen USB:** `cp -r /home/clopes/.picoclaw/workspace /mnt/storage/picoclaw-backup`\n  - **Frequência:** Diariamente às 04:05\n  - **ID da Tarefa Cron:** `5b18d62bb11cbfd1`\n\n## Estado de Saúde\n\n- **Última Verificação:** 2026-02-25 03:56:10 (Quarta-feira)\n- **Status:** Operacional\n- **Observações:** Todas as rotinas agendadas estão ativas e a funcionar como esperado.\n",
+      "tool_call_id": "function-call-4340956010693395924"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "function-call-7950084688328981327",
+          "type": "function",
+          "function": {
+            "name": "edit_file",
+            "arguments": "{\"new_text\":\"- **Última Verificação:** 2026-02-25 04:26:10 (Quarta-feira)\",\"old_text\":\"- **Última Verificação:** 2026-02-25 03:56:10 (Quarta-feira)\",\"path\":\"/home/clopes/.picoclaw/workspace/HEARTBEAT.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "File edited: /home/clopes/.picoclaw/workspace/HEARTBEAT.md",
+      "tool_call_id": "function-call-7950084688328981327"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "function-call-9225009041347870179",
+          "type": "function",
+          "function": {
+            "name": "exec",
+            "arguments": "{\"command\":\"cd /home/clopes/.picoclaw/workspace \\u0026\\u0026 git add . \\u0026\\u0026 git commit -m \\\"Rotina diária de backup do workspace para o GitHub\\\" \\u0026\\u0026 git push origin main\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "[main 90beee5] Rotina diária de backup do workspace para o GitHub\n 4 files changed, 9 insertions(+), 7 deletions(-)\n\nSTDERR:\nTo https://github.com/bitnipo-clopes/apolo-bot.git\n   8a4145a..90beee5  main -\u003e main\n",
+      "tool_call_id": "function-call-9225009041347870179"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "function-call-11322918242706574659",
+          "type": "function",
+          "function": {
+            "name": "exec",
+            "arguments": "{\"command\":\"cp -r /home/clopes/.picoclaw/workspace /mnt/storage/picoclaw-backup\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "\nSTDERR:\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/31/35cfd23883749ff32618f2d8665613487e143c': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/8d/e296a6e43aca09b7cd3754976c03986e736dc4': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/9a/dbb63b6e0cc32e65cfc1ba819fdadef2c6a569': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/3e/bbc8536bc2134399f0028d3dc288de549b3f48': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/1a/0b0fb4412420224ebc9c671387a4715288a8ed': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/f4/b447c4839f6c89990fd2130eb789e7e55e5a5a': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/ef/76f397d97216f93b4b83fb6f512dbcff3cc5a6': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/32/8ac9c11285f84561f6fff492e44f60dc5ad1c7': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/98/28991940d61d95c52f33aa0ad3fe98d9b763d6': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/b5/e54350a320e10937fec1062d6bd6e7688b967e': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/ed/4dee871435f5d5bf7a40cdc7d7b96d4f914080': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/5f/5fa648044041e173cdf98a3fb3664084e3ad26': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/5f/73073628a602af113df04ae5b037e00ee0404e': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/f2/6f509948a4a4e10290444d14a089305d1e997d': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/f2/a3144d8516e6e32375beb7bc40851101cbf006': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/f2/bb18c6940dafa3741665db757c862a52c68a17': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/f2/bdaab8547458d6c8dad36ccf0716bda045a167': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/da/bb0e14be3d35c489182c7fd3b6569390922692': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/e7/d81c5f181347eefd07310c48e4c85889440d9b': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/d0/4e85d026d4896c737602f2248241fcf80d566c': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/91/398a01949fe618ac26755c28adb339d1842913': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/91/6f26f20abd29396858be746497afd142ba21bf': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/2b/3e045420095b2858c5862c3eb7406cbcd526cd': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/b8/cdc503b25c14a72ef0ea314bdcb4c0a57cb579': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/b8/7f5e2db5705e16cead230f23eedf4ee46ef8c4': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/f7/256ac3ceabed53a3a7cf2f1d4cfd97707ebd83': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/0d/53196614420a2c0651905d3d9386e534ca5f28': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/0d/e0778388caa6ec9227d12e6a141e9e7ceb33e7': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/69/f5569570b87cea15d0215b2f347ebc56161afa': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/69/7f9bfc673f9c3917916911c8ac255fcbf4f411': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/26/da5750999775d6ce2bb9262a6bee85a68be3f6': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/26/5271db9ae96ea98b8dede1a41c7e61eb1b4bd3': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/26/daf305689666eb4b3f5b944d31ece477b3169e': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/43/8827afb0f0aa3216eeb71790f11ccc39a6735f': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/43/1dba2acc53aa296af39b6b31f1b85c04c75172': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/43/9303773d357a3adcd0a3bce171759a6c4700b5': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/9b/ddeed16c325bb961caff5c48805a543b829b0b': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/9b/5eb6fea627859f4b842942ac10ef774bb900f9': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/d8/242ba9e36daef9f55fb7bf0ec93078df77b602': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/d8/e2a4aae4486b9476b5fb0bbad0ad4dafc93b40': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/18/28d47e61d47f13b1941f6295b538f9943af889': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/2a/284bc8ad9e6bb7a3898ecab4c4932219916773': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/2a/75908bcdc04f3e67da38524a2f7b872fcfadda': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/2a/c9d7fed240fbce8d3ba519fba6efad8ffb4ee0': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/16/1d71ee72a968d19aaa80b507e40c398a0981ff': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/16/0ffe6ed370d10cbf894ebb9f98c90da1a58974': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/71/f718def5bfaa46f4410a3a7250b8a38a6cd06e': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/71/5e8ab7fd1319ba02976b662bbdcd0ccd2c8434': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/57/d81278d88455480f88a34d04d1a8a84ca3b247': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/57/b771956f3fa725c32cf23e627712aa1bcaeff8': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/e8/9d1b6e753cf3b84cb22da3ceeb66992fd9c7fd': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/82/7dd06136a1b1cf0489deb237f836357537fc61': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/28/72111c94e052d0762f48dc58dfcdaffca928af': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/76/6ab5d0b627cbdaea3252bc2dbf898f99f2cda3': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/76/97358b9966b6b3d42a2658b3485e5e451f8f49': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/00/552c68477920b2c9e9d9d2561d175f4a85d40a': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/56/354be835459c7614bfc96b5526e92dc1dbde5d': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/80/73de192a852e49835acb8edd06c01a2654eb8c': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/15/067c7b9ddca42dad114c3f918513024394f72f': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/a0/aaf79c765d2897a5147b7d48da97f5d26da1cf': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/73/f3154b895073540422ddfef2689264cc412b35': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/73/ff3ddd1de35ef11a18fd27fd72c508a6c46199': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/09/6a624f50328775ff989ed06bcd9c2f0c6541ff': Permissão recusada\ncp: impossível criar o ficheiro normal '/mnt/storage/picoclaw-backup/workspace/.git/objects/09/9e66\n... (truncated, 19393 more chars)",
+      "tool_call_id": "function-call-11322918242706574659"
+    },
+    {
+      "role": "assistant",
+      "content": "O backup diário do workspace para o GitHub foi concluído com sucesso. No entanto, o backup diário para a Pen USB falhou devido a \"Permissão recusada\".\n\nPor favor, verifica as permissões para o diretório `/mnt/storage/picoclaw-backup` para garantir que o Apolo tem permissão de escrita.\n\nVou atualizar o `HEARTBEAT.md` para refletir o estado atual.\n",
+      "tool_calls": [
+        {
+          "id": "function-call-16429964116909137861",
+          "type": "function",
+          "function": {
+            "name": "edit_file",
+            "arguments": "{\"new_text\":\"- **Backup Diário do Workspace para a Pen USB:** `cp -r /home/clopes/.picoclaw/workspace /mnt/storage/picoclaw-backup`\\n  - **Frequência:** Diariamente às 04:05\\n  - **ID da Tarefa Cron:** `5b18d62bb11cbfd1`\\n  - **Estado:** Falhou devido a permissões de escrita em `/mnt/storage/picoclaw-backup`\",\"old_text\":\"- **Backup Diário do Workspace para a Pen USB:** `cp -r /home/clopes/.picoclaw/workspace /mnt/storage/picoclaw-backup`\\n  - **Frequência:** Diariamente às 04:05\\n  - **ID da Tarefa Cron:** `5b18d62bb11cbfd1`\",\"path\":\"/home/clopes/.picoclaw/workspace/HEARTBEAT.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "File edited: /home/clopes/.picoclaw/workspace/HEARTBEAT.md",
+      "tool_call_id": "function-call-16429964116909137861"
+    },
+    {
+      "role": "assistant",
+      "content": "O backup diário do workspace para o GitHub foi concluído com sucesso. No entanto, o backup diário para a Pen USB falhou devido a um erro de \"Permissão recusada\".\n\nPor favor, verifica as permissões de escrita para o diretório `/mnt/storage/picoclaw-backup` na Pen USB. O `HEARTBEAT.md` foi atualizado para refletir esta informação."
     }
   ],
   "created": "2026-02-21T20:38:26.487283988Z",
-  "updated": "2026-02-25T03:56:18.286835813Z"
+  "updated": "2026-02-25T04:26:25.551414311Z"
 }
