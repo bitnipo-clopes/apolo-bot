@@ -18,11 +18,12 @@
         "to": "263042058"
       },
       "state": {
-        "lastRunAtMs": 1771819200182,
+        "nextRunAtMs": 1771992000000,
+        "lastRunAtMs": 1771905600183,
         "lastStatus": "ok"
       },
       "createdAtMs": 1771708453609,
-      "updatedAtMs": 1771819201492,
+      "updatedAtMs": 1771905601327,
       "deleteAfterRun": false
     },
     {
@@ -42,12 +43,12 @@
         "to": "263042058"
       },
       "state": {
-        "nextRunAtMs": 1771905900000,
-        "lastRunAtMs": 1771819500183,
+        "nextRunAtMs": 1771992300000,
+        "lastRunAtMs": 1771905900183,
         "lastStatus": "ok"
       },
       "createdAtMs": 1771708455298,
-      "updatedAtMs": 1771819500428,
+      "updatedAtMs": 1771905901697,
       "deleteAfterRun": false
     }
   ]
