@@ -11,9 +11,9 @@ Este ficheiro documenta as rotinas automatizadas e o estado de saúde do Apolo.
 - **Backup Diário do Workspace para a Pen USB:** `cp -r /home/clopes/.picoclaw/workspace /mnt/storage/picoclaw-backup`
   - **Frequência:** Diariamente às 04:05
   - **ID da Tarefa Cron:** `5b18d62bb11cbfd1`
-  - **Estado:** Falhou devido a permissões de escrita em `/mnt/storage/picoclaw-backup` (tentativa de correção falhou devido a autenticação sudo)
+  - **Estado:** O problema de permissão parece estar resolvido. Teste manual de cópia de ficheiros foi bem-sucedido. É recomendável monitorizar o próximo backup agendado.
 
 ## Estado de Saúde
 
-- **Última Verificação:** 2026-02-25 05:26:10 (Quarta-feira)
-- **Status:** Operacional com problemas de permissão no backup USB
+- Última Verificação: 2026-02-26 03:56:10 (Quinta-feira)
+- **Status:** Operacional. O problema de permissão no backup diário para a Pen USB parece estar resolvido. É recomendável monitorizar o próximo backup agendado.

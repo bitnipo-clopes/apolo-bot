@@ -45,6 +45,6 @@ This file stores important information that should persist across sessions.
 
 ## Estado de Saúde
 
-- **Última Verificação:** 2026-02-24 22:26 (Terça-feira)
-- **Status:** Operacional
-- **Observações:** Todas as rotinas agendadas estão ativas e a funcionar como esperado.
+- **Última Verificação:** 2026-02-25 22:56 (Quarta-feira)
+- **Status:** Operacional. O problema de permissão no backup diário para a Pen USB parece estar resolvido. Teste manual de cópia de ficheiros foi bem-sucedido. É recomendável monitorizar o próximo backup agendado.
+- **Status:** Operacional. O problema de permissão no backup diário para a Pen USB parece estar resolvido. Teste manual de cópia de ficheiros foi bem-sucedido. É recomendável monitorizar o próximo backup agendado.
