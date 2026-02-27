@@ -14,6 +14,5 @@ Este ficheiro documenta as rotinas automatizadas e o estado de saúde do Apolo.
 
 ## Estado de Saúde
 
-- Última Verificação: 2026-02-26 00:56:10 (Quinta-feira)
-- **Status:** Operacional
-- **Observações:** Todas as rotinas agendadas estão ativas e a funcionar como esperado.
+- Última Verificação: 2026-02-26 13:26:10 (Quinta-feira)
+- **Status:** Operacional. O problema de permissão no backup diário para a Pen USB parece estar resolvido. Teste manual de cópia de ficheiros foi bem-sucedido. É recomendável monitorizar o próximo backup agendado.
