@@ -1,0 +1,13 @@
+# OpenClaw config
+.openclaw/
+
+# Logs
+*.log
+whisper_install_log.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Optional: keep memory files or ignore them based on privacy preference
+# memory/

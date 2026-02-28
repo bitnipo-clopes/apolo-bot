@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "created": "2026-02-28T23:31:00Z",
+    "base_prices_registered": "2026-02-28T23:25:00Z",
+    "monitoring_interval_minutes": 30,
+    "alert_threshold_percent": 5,
+    "sources": ["coingecko", "binance"]
+  },
+  "base_prices": {
+    "BTC": {"usd": 67028, "timestamp": "2026-02-28T23:25:00Z", "source": "coingecko"},
+    "ETH": {"usd": 1961.94, "timestamp": "2026-02-28T23:27:00Z", "source": "coingecko"},
+    "SOL": {"usd": 84.27, "timestamp": "2026-02-28T23:27:00Z", "source": "coingecko"},
+    "KAS": {"usd": 0.03006, "timestamp": "2026-02-28T23:27:00Z", "source": "coingecko"},
+    "FLUX": {"usd": 0.06201, "timestamp": "2026-02-28T23:51:00Z", "source": "coingecko_zelcash", "note": "Zelcash FLUX - símbolo CoinGecko: zelcash, Binance: FLUXUSDT"}
+  },
+  "readings": [
+    {
+      "timestamp": "2026-02-28T23:25:00Z",
+      "prices": {
+        "BTC": {"coingecko": 67028, "binance": null},
+        "ETH": {"coingecko": 1961.94, "binance": null},
+        "SOL": {"coingecko": 84.27, "binance": null},
+        "KAS": {"coingecko": 0.03006, "binance": null},
+        "FLUX": {"coingecko": 0.02044, "binance": null}
+      },
+      "averages": {
+        "BTC": 67028,
+        "ETH": 1961.94,
+        "SOL": 84.27,
+        "KAS": 0.03006,
+        "FLUX": 0.02044
+      },
+      "variations_from_base": {
+        "BTC": 0,
+        "ETH": 0,
+        "SOL": 0,
+        "KAS": 0,
+        "FLUX": 0
+      }
+    },
+    {
+      "timestamp": "2026-02-28T23:32:00Z",
+      "prices": {
+        "BTC": {"coingecko": 67028, "binance": 66984.58},
+        "ETH": {"coingecko": 1961.94, "binance": 1962.60},
+        "SOL": {"coingecko": 84.27, "binance": 84.33},
+        "KAS": {"coingecko": 0.03006, "binance": null},
+        "FLUX": {"coingecko": 0.02044, "binance": 0.0616}
+      },
+      "averages": {
+        "BTC": 67006.29,
+        "ETH": 1962.27,
+        "SOL": 84.30,
+        "KAS": 0.03006,
+        "FLUX": 0.04102
+      },
+      "variations_from_base": {
+        "BTC": -0.03,
+        "ETH": 0.02,
+        "SOL": 0.04,
+        "KAS": 0,
+        "FLUX": -0.68
+      },
+      "notes": {
+        "FLUX": "Corrigido: CoinGecko 'zelcash' = Binance FLUXUSDT. Variação real: -0.68%"
+      }
+    }
+  ],
+  "alerts": [
+    {
+      "timestamp": "2026-02-28T23:32:00Z",
+      "coin": "FLUX",
+      "type": "data_quality",
+      "message": "Grande discrepância entre fontes: CoinGecko $0.02044 vs Binance $0.06160 (200% de diferença)",
+      "severity": "warning"
+    },
+    {
+      "timestamp": "2026-02-28T23:51:00Z",
+      "coin": "FLUX",
+      "type": "correction",
+      "message": "Símbolo CoinGecko corrigido: 'zelcash' em vez de 'flux'. Preço base atualizado para $0.06201",
+      "severity": "info"
+    }
+  ],
+  "statistics": {
+    "total_readings": 2,
+    "alerts_triggered": 1,
+    "last_reading": "2026-02-28T23:32:00Z",
+    "avg_coingecko_binance_diff_percent": {
+      "BTC": 0.06,
+      "ETH": 0.03,
+      "SOL": 0.07,
+      "FLUX": 200.0
+    }
+  }
+}
