@@ -1,0 +1,71 @@
+{"timestamp": "2026-03-05T07:04:49+00:00", "hostname": "zeus", "checks": {
+  "openclaw_audit": 
+{
+  "ts": 1772694290928,
+  "summary": {
+    "critical": 1,
+    "warn": 2,
+    "info": 1
+  },
+  "findings": [
+    {
+      "checkId": "summary.attack_surface",
+      "severity": "info",
+      "title": "Attack surface summary",
+      "detail": "groups: open=0, allowlist=1\ntools.elevated: enabled\nhooks.webhooks: disabled\nhooks.internal: enabled\nbrowser control: enabled\ntrust model: personal assistant (one trusted operator boundary), not hostile multi-tenant on one shared gateway"
+    },
+    {
+      "checkId": "gateway.trusted_proxies_missing",
+      "severity": "warn",
+      "title": "Reverse proxy headers are not trusted",
+      "detail": "gateway.bind is loopback and gateway.trustedProxies is empty. If you expose the Control UI through a reverse proxy, configure trusted proxies so local-client checks cannot be spoofed.",
+      "remediation": "Set gateway.trustedProxies to your proxy IPs or keep the Control UI local-only."
+    },
+    {
+      "checkId": "gateway.nodes.deny_commands_ineffective",
+      "severity": "warn",
+      "title": "Some gateway.nodes.denyCommands entries are ineffective",
+      "detail": "gateway.nodes.denyCommands uses exact node command-name matching only (for example `system.run`), not shell-text filtering inside a command payload.\n- Unknown command names (not in defaults/allowCommands): camera.snap, camera.clip, screen.record, calendar.add, contacts.add, reminders.add",
+      "remediation": "Use exact command names (for example: canvas.present, canvas.hide, canvas.navigate, canvas.eval, canvas.snapshot, canvas.a2ui.push, canvas.a2ui.pushJSONL, canvas.a2ui.reset). If you need broader restrictions, remove risky command IDs from allowCommands/default workflows and tighten tools.exec policy."
+    },
+    {
+      "checkId": "models.small_params",
+      "severity": "critical",
+      "title": "Small models require sandboxing and web tools disabled",
+      "detail": "Small models (<=300B params) detected:\n- llama/heretic-35b (35B) @ agents.defaults.model.primary (unsafe; sandbox=off; web=[web_fetch, browser])\nUncontrolled input tools allowed: web_fetch, browser.\nSmall models are not recommended for untrusted inputs.",
+      "remediation": "If you must use small models, enable sandboxing for all sessions (agents.defaults.sandbox.mode=\"all\") and disable web_search/web_fetch/browser (tools.deny=[\"group:web\",\"browser\"])."
+    }
+  ]
+}
+,
+  "gateway_status": 
+{
+  "gateway": {
+    "mode": "local",
+    "url": "ws://127.0.0.1:18789",
+    "urlSource": "local loopback",
+    "misconfigured": false,
+    "reachable": true,
+    "connectLatencyMs": 112,
+    "self": {
+      "host": "zeus",
+      "ip": "192.168.1.12",
+      "version": "2026.2.26",
+      "platform": "linux 6.17.0-14-generic"
+    },
+    "error": null
+  },
+  "status": null
+}
+,
+  "listening_ports": 
+,
+  "firewall": 
+{"status": "inactive"}
+,
+  "ssh": 
+{"permit_root": "", "password_auth": "", "port": ""}
+,
+  "exposed_services": 
+["0","0","0","0","0","0","0","4096","4096","4096","4096","4096","4096"]
+}}

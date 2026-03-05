@@ -1,5 +1,5 @@
 # HEARTBEAT.md
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
-
-# Add tasks below when you want the agent to check something periodically.
+## Monitorização do Sistema
+- [ ] Verificar CPU, RAM, disco (alertar se >80%/>90%/>85%)
+- [ ] Estado do OpenClaw Gateway

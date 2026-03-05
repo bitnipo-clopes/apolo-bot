@@ -1,96 +1,52 @@
 {
-  "metadata": {
-    "created": "2026-02-28T23:31:00Z",
-    "base_prices_registered": "2026-02-28T23:25:00Z",
-    "monitoring_interval_minutes": 30,
-    "alert_threshold_percent": 5,
-    "sources": ["coingecko", "binance"]
-  },
   "base_prices": {
-    "BTC": {"usd": 67028, "timestamp": "2026-02-28T23:25:00Z", "source": "coingecko"},
-    "ETH": {"usd": 1961.94, "timestamp": "2026-02-28T23:27:00Z", "source": "coingecko"},
-    "SOL": {"usd": 84.27, "timestamp": "2026-02-28T23:27:00Z", "source": "coingecko"},
-    "KAS": {"usd": 0.03006, "timestamp": "2026-02-28T23:27:00Z", "source": "coingecko"},
-    "FLUX": {"usd": 0.06201, "timestamp": "2026-02-28T23:51:00Z", "source": "coingecko_zelcash", "note": "Zelcash FLUX - símbolo CoinGecko: zelcash, Binance: FLUXUSDT"}
+    "timestamp": "2026-03-01T00:35:00Z",
+    "prices": {
+      "BTC": { "coingecko": 66759, "binance": 66777.68, "average": 66768.34, "currency": "USD" },
+      "ETH": { "coingecko": 1958.88, "binance": 1959.57, "average": 1959.23, "currency": "USD" },
+      "SOL": { "coingecko": 84.51, "binance": 84.57, "average": 84.54, "currency": "USD" },
+      "KAS": { "coingecko": 0.02999177, "average": 0.02997, "currency": "USD" },
+      "FLUX": { "coingecko": 0.061913, "binance": 0.0619, "average": 0.06191, "currency": "USD" }
+    }
   },
-  "readings": [
-    {
-      "timestamp": "2026-02-28T23:25:00Z",
-      "prices": {
-        "BTC": {"coingecko": 67028, "binance": null},
-        "ETH": {"coingecko": 1961.94, "binance": null},
-        "SOL": {"coingecko": 84.27, "binance": null},
-        "KAS": {"coingecko": 0.03006, "binance": null},
-        "FLUX": {"coingecko": 0.02044, "binance": null}
-      },
-      "averages": {
-        "BTC": 67028,
-        "ETH": 1961.94,
-        "SOL": 84.27,
-        "KAS": 0.03006,
-        "FLUX": 0.02044
-      },
-      "variations_from_base": {
-        "BTC": 0,
-        "ETH": 0,
-        "SOL": 0,
-        "KAS": 0,
-        "FLUX": 0
-      }
-    },
-    {
-      "timestamp": "2026-02-28T23:32:00Z",
-      "prices": {
-        "BTC": {"coingecko": 67028, "binance": 66984.58},
-        "ETH": {"coingecko": 1961.94, "binance": 1962.60},
-        "SOL": {"coingecko": 84.27, "binance": 84.33},
-        "KAS": {"coingecko": 0.03006, "binance": null},
-        "FLUX": {"coingecko": 0.02044, "binance": 0.0616}
-      },
-      "averages": {
-        "BTC": 67006.29,
-        "ETH": 1962.27,
-        "SOL": 84.30,
-        "KAS": 0.03006,
-        "FLUX": 0.04102
-      },
-      "variations_from_base": {
-        "BTC": -0.03,
-        "ETH": 0.02,
-        "SOL": 0.04,
-        "KAS": 0,
-        "FLUX": -0.68
-      },
-      "notes": {
-        "FLUX": "Corrigido: CoinGecko 'zelcash' = Binance FLUXUSDT. Variação real: -0.68%"
-      }
+  "previous_prices": {
+    "timestamp": "2026-03-05T15:54:00Z",
+    "prices": {
+      "BTC": { "coingecko": 71617, "binance": 71674, "average": 71645.5, "currency": "USD" },
+      "ETH": { "coingecko": 2085.38, "binance": 2087.74, "average": 2086.56, "currency": "USD" },
+      "SOL": { "coingecko": 89.54, "binance": 89.76, "average": 89.65, "currency": "USD" },
+      "KAS": { "coingecko": 0.03096641, "average": 0.03096641, "currency": "USD" },
+      "FLUX": { "coingecko": 0.02130287, "average": 0.02130287, "currency": "USD" }
     }
-  ],
-  "alerts": [
-    {
-      "timestamp": "2026-02-28T23:32:00Z",
-      "coin": "FLUX",
-      "type": "data_quality",
-      "message": "Grande discrepância entre fontes: CoinGecko $0.02044 vs Binance $0.06160 (200% de diferença)",
-      "severity": "warning"
-    },
-    {
-      "timestamp": "2026-02-28T23:51:00Z",
-      "coin": "FLUX",
-      "type": "correction",
-      "message": "Símbolo CoinGecko corrigido: 'zelcash' em vez de 'flux'. Preço base atualizado para $0.06201",
-      "severity": "info"
+  },
+  "current_prices": {
+    "timestamp": "2026-03-05T16:24:00Z",
+    "prices": {
+      "BTC": { "coingecko": 71041, "binance": 71049.73, "average": 71045.37, "currency": "USD" },
+      "ETH": { "coingecko": 2070.71, "binance": 2073.99, "average": 2072.35, "currency": "USD" },
+      "SOL": { "coingecko": 88.21, "binance": 88.41, "average": 88.31, "currency": "USD" },
+      "KAS": { "coingecko": 0.03070381, "average": 0.03070381, "currency": "USD" },
+      "FLUX": { "coingecko": 0.02112386, "average": 0.02112386, "currency": "USD" }
     }
-  ],
-  "statistics": {
-    "total_readings": 2,
-    "alerts_triggered": 1,
-    "last_reading": "2026-02-28T23:32:00Z",
-    "avg_coingecko_binance_diff_percent": {
-      "BTC": 0.06,
-      "ETH": 0.03,
-      "SOL": 0.07,
-      "FLUX": 200.0
-    }
+  },
+  "changes_from_base": {
+    "BTC": 6.41,
+    "ETH": 5.77,
+    "SOL": 4.46,
+    "KAS": 2.38,
+    "FLUX": -65.88
+  },
+  "changes_from_previous": {
+    "BTC": -0.84,
+    "ETH": -0.68,
+    "SOL": -1.49,
+    "KAS": -0.85,
+    "FLUX": -0.84
+  },
+  "alert_status": {
+    "variations_above_5pct_from_base": ["BTC", "ETH"],
+    "variations_above_3pct_since_last": [],
+    "alert_needed": true,
+    "notes": "Leitura 16:24 - BTC e ETH mantêm-se acima de +5% desde a base. SOL desceu para +4.46% (abaixo do threshold). FLUX continua anormalmente baixo (~$0.021), possível erro de API ou split não registado."
   }
 }

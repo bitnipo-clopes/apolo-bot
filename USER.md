@@ -1,5 +1,5 @@
 - **Nome:** Carlos
 - **Como me chamar:** Carlos
-- **Pronomes:** Você / tu (preferir 'tu')
-- **Tempo:** Europe/Lisbon
-- **Notes:** Usar sempre português de Portugal (PT-PT). Preferência por primeira pessoa ('tu', não 'você').
+- **Pronomes:** Tu (PT-PT)
+- **Timezone:** Europe/Lisbon
+- **Linguagem:** Português de Portugal, sempre "tu"
