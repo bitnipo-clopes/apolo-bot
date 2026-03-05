@@ -1,112 +1,63 @@
 {
-  "generated_at": "2026-03-05T05:59:35.444Z",
-  "analysis_date": "2026-03-05",
+  "generated_at": "2026-03-05T22:21:01+00:00",
+  "analysis_date": "2026-03-04",
   "capital_per_asset": 1000,
   "assets": {
     "BTC": {
-      "open": 68204.96157938924,
-      "high": 73953,
-      "low": 68110,
-      "close": 72357,
-      "current_price": 72357,
-      "swing": {
-        "buy_price": 68110,
-        "sell_price": 73953,
-        "profit_usd": 85.78769637351343,
-        "return_pct": 8.578769637351344
-      },
-      "buyhold": {
-        "buy_price": 68204.96157938924,
-        "current_value": 1060.8759000000002,
-        "profit_usd": 60.87590000000023,
-        "return_pct": 6.08759
-      },
-      "advantage_pct": 2.491179637351345,
-      "data_source": "market_24h"
-    },
-    "ETH": {
-      "open": 1971.6990618494117,
-      "high": 2192.82,
-      "low": 1964.63,
-      "close": 2117.66,
-      "current_price": 2117.66,
-      "swing": {
-        "buy_price": 1964.63,
-        "sell_price": 2192.82,
-        "profit_usd": 116.1490967764923,
-        "return_pct": 11.614909677649228
-      },
-      "buyhold": {
-        "buy_price": 1971.6990618494117,
-        "current_value": 1074.0279999999998,
-        "profit_usd": 74.02799999999979,
-        "return_pct": 7.4028
-      },
-      "advantage_pct": 4.212109677649228,
-      "data_source": "market_24h"
-    },
-    "SOL": {
-      "open": 85.68089614350458,
-      "high": 93.71,
-      "low": 85.12,
-      "close": 90.18,
-      "current_price": 90.18,
-      "swing": {
-        "buy_price": 85.12,
-        "sell_price": 93.71,
-        "profit_usd": 100.91635338345851,
-        "return_pct": 10.091635338345851
-      },
-      "buyhold": {
-        "buy_price": 85.68089614350458,
-        "current_value": 1052.51,
-        "profit_usd": 52.50999999999999,
-        "return_pct": 5.251
-      },
-      "advantage_pct": 4.840635338345851,
-      "data_source": "market_24h"
-    },
-    "KAS": {
-      "open": 0.03039293112916081,
-      "high": 0.03256878,
-      "low": 0.03038755,
-      "close": 0.03102208,
-      "current_price": 0.03102208,
-      "swing": {
-        "buy_price": 0.03038755,
-        "sell_price": 0.03256878,
-        "profit_usd": 71.78038374268407,
-        "return_pct": 7.178038374268407
-      },
-      "buyhold": {
-        "buy_price": 0.03039293112916081,
-        "current_value": 1020.7005,
-        "profit_usd": 20.700500000000034,
-        "return_pct": 2.07005
-      },
-      "advantage_pct": 5.107988374268407,
-      "data_source": "market_24h"
-    },
-    "FLUX": {
-      "open": 0.058559770317667965,
-      "high": 0.061898,
-      "low": 0.058321,
-      "close": 0.059167,
-      "current_price": 0.059167,
-      "swing": {
-        "buy_price": 0.058321,
-        "sell_price": 0.061898,
-        "profit_usd": 61.33296754170888,
-        "return_pct": 6.133296754170889
-      },
-      "buyhold": {
-        "buy_price": 0.058559770317667965,
-        "current_value": 1010.3694000000002,
-        "profit_usd": 10.369400000000155,
-        "return_pct": 1.03694
-      },
-      "advantage_pct": 5.096356754170889,
-      "data_source": "market_24h"
+      "name": "Bitcoin",
+      "ohlc": {"open": 68292.19284917977, "high": 73669.77886917477, "low": 67727.15054899485, "close": 72719.81406521072},
+      "week_high": 73669.77886917477, "week_low": 63176.9334493685,
+      "volatility": 0.722065004037641, "rsi": 53.25478987073953,
+      "swing": {"profit": -263.30221130826, "return": -26.00},
+      "buyhold": {"profit": -272.80185934790, "return": -27.00},
+      "advantage": 1.00
     }
+,
+    "ETH": {
+      "name": "Ethereum",
+      "ohlc": {"open": 1981.402086858615, "high": 2179.3034097539403, "low": 1960.3803612865781, "close": 2132.1752731699717},
+      "week_high": 2179.3034097539403, "week_low": 1841.2881843632538,
+      "volatility": 0.8944891044571822, "rsi": 51.15966634898959,
+      "swing": {"profit": 111.4447389745095, "return": 11.00},
+      "buyhold": {"profit": 66.0876365849858, "return": 6.00},
+      "advantage": 5.00
+    }
+,
+    "SOL": {
+      "name": "Solana",
+      "ohlc": {"open": 87.02548418578014, "high": 93.41305666144846, "low": 85.3016587569467, "close": 91.36001226024793},
+      "week_high": 93.41305666144846, "week_low": 77.47015560410398,
+      "volatility": 1.0286312514513405, "rsi": 51.491481914611924,
+      "swing": {"profit": 94.80102407217595, "return": 9.00},
+      "buyhold": {"profit": 49.72654087024871, "return": 4.00},
+      "advantage": 5.00
+    }
+,
+    "KAS": {
+      "name": "Kaspa",
+      "ohlc": {"open": 0.03049083138865027, "high": 0.032409174811527136, "low": 0.030357539008985603, "close": 0.030856964228333162},
+      "week_high": 0.032409174811527136, "week_low": 0.02841579588045675,
+      "volatility": 0.8646619517419688, "rsi": 48.91403827717478,
+      "swing": {"profit": 67.582201081064389920, "return": 6.00},
+      "buyhold": {"profit": 12.007832985943347491, "return": 1.00},
+      "advantage": 5.00
+    }
+,
+    "FLUX": {
+      "name": "Flux",
+      "ohlc": {"open": 0.0596036643084971, "high": 0.061511422879487465, "low": 0.05809004935805686, "close": 0.060155886791567574},
+      "week_high": 0.0641755323255953, "week_low": 0.05794303734275425,
+      "volatility": 0.8393061732095478, "rsi": 47.27439642513129,
+      "swing": {"profit": 58.897615872368889362, "return": 5.00},
+      "buyhold": {"profit": 9.264789086657057109, "return": 0},
+      "advantage": 5.00
+    }
+  },
+  "summary": {
+    "total_swing": 69.423368691858729282,
+    "total_buyhold": -135.715059820065085400,
+    "advantage": 205.138428511923814682,
+    "avg_return_swing": 1.38,
+    "avg_return_buyhold": -2.71
   }
 }
