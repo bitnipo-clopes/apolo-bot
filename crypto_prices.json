@@ -10,43 +10,43 @@
     }
   },
   "previous_prices": {
-    "timestamp": "2026-03-05T21:54:00Z",
+    "timestamp": "2026-03-05T23:54:00Z",
     "prices": {
-      "BTC": { "coingecko": 71130, "binance": 71047.73, "average": 71088.87, "currency": "USD" },
-      "ETH": { "coingecko": 2079.24, "binance": 2076.63, "average": 2077.94, "currency": "USD" },
-      "SOL": { "coingecko": 89.10, "binance": 88.92, "average": 89.01, "currency": "USD" },
-      "KAS": { "coingecko": 0.03078915, "average": 0.03078915, "currency": "USD" },
-      "FLUX": { "coingecko": 0.059618, "average": 0.059618, "currency": "USD" }
+      "BTC": { "coingecko": 70866, "binance": 70871.89, "average": 70868.95, "currency": "USD" },
+      "ETH": { "coingecko": 2074.05, "binance": 2074.56, "average": 2074.31, "currency": "USD" },
+      "SOL": { "coingecko": 88.76, "binance": 88.72, "average": 88.74, "currency": "USD" },
+      "KAS": { "coingecko": 0.03049424, "average": 0.03049424, "currency": "USD" },
+      "FLUX": { "coingecko": 0.02170466, "average": 0.04060233, "currency": "USD" }
     }
   },
   "current_prices": {
-    "timestamp": "2026-03-05T22:24:00Z",
+    "timestamp": "2026-03-06T00:24:00Z",
     "prices": {
-      "BTC": { "coingecko": 71240, "binance": 71265.61, "average": 71252.81, "currency": "USD" },
-      "ETH": { "coingecko": 2081.16, "binance": 2082.42, "average": 2081.79, "currency": "USD" },
-      "SOL": { "coingecko": 89.04, "binance": 89.07, "average": 89.06, "currency": "USD" },
-      "KAS": { "coingecko": 0.03068747, "average": 0.03068747, "currency": "USD" },
-      "FLUX": { "coingecko": 0.05962, "average": 0.05962, "currency": "USD" }
+      "BTC": { "coingecko": 70972, "binance": 70983.82, "average": 70977.91, "currency": "USD" },
+      "ETH": { "coingecko": 2075.7, "binance": 2076.1, "average": 2075.9, "currency": "USD" },
+      "SOL": { "coingecko": 88.88, "binance": 88.93, "average": 88.905, "currency": "USD" },
+      "KAS": { "coingecko": 0.03054429, "average": 0.03054429, "currency": "USD" },
+      "FLUX": { "coingecko": 0.02170466, "average": 0.02170466, "currency": "USD" }
     }
   },
   "changes_from_base": {
-    "BTC": 6.72,
-    "ETH": 6.26,
-    "SOL": 5.35,
-    "KAS": 2.32,
-    "FLUX": -3.70
+    "BTC": 6.30,
+    "ETH": 5.96,
+    "SOL": 5.16,
+    "KAS": 1.91,
+    "FLUX": -64.94
   },
   "changes_from_previous": {
-    "BTC": 0.23,
-    "ETH": 0.19,
-    "SOL": 0.06,
-    "KAS": -0.33,
-    "FLUX": 0.00
+    "BTC": 0.15,
+    "ETH": 0.08,
+    "SOL": 0.19,
+    "KAS": 0.16,
+    "FLUX": -46.54
   },
   "alert_status": {
     "variations_above_5pct_from_base": ["BTC", "ETH", "SOL"],
-    "variations_above_3pct_since_last": [],
+    "variations_above_3pct_since_last": ["FLUX"],
     "alert_needed": false,
-    "notes": "Leitura 22:24 - Horário de silêncio ativo (21:00-08:00). BTC, ETH e SOL mantêm-se acima de +5% desde a base. Variações desde última leitura mínimas (<0.25%)."
+    "notes": "Leitura 00:24 - Horário de silêncio ativo (21:00-08:00). BTC, ETH e SOL acima de +5% desde a base. FLUX continua com dados anómalos na CoinGecko."
   }
 }
