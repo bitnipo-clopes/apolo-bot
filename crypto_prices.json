@@ -10,43 +10,43 @@
     }
   },
   "previous_prices": {
-    "timestamp": "2026-03-06T03:54:00Z",
+    "timestamp": "2026-03-06T05:54:00Z",
     "prices": {
-      "BTC": { "coingecko": 71066, "binance": 71053.13, "average": 71059.57, "currency": "USD" },
-      "ETH": { "coingecko": 2081.74, "binance": 2081.75, "average": 2081.75, "currency": "USD" },
-      "SOL": { "coingecko": 88.42, "binance": 88.43, "average": 88.43, "currency": "USD" },
-      "KAS": { "coingecko": 0.03096617, "average": 0.03096617, "currency": "USD" },
-      "FLUX": { "coingecko": 0.060389, "average": 0.060389, "currency": "USD" }
+      "BTC": { "coingecko": 70198, "average": 70198, "currency": "USD" },
+      "ETH": { "coingecko": 2062.95, "average": 2062.95, "currency": "USD" },
+      "SOL": { "coingecko": 87.65, "average": 87.65, "currency": "USD" },
+      "KAS": { "coingecko": 0.03050209, "average": 0.03050209, "currency": "USD" },
+      "FLUX": { "coingecko": 0.060163, "average": 0.060163, "currency": "USD" }
     }
   },
   "current_prices": {
-    "timestamp": "2026-03-06T04:24:00Z",
+    "timestamp": "2026-03-06T06:24:00Z",
     "prices": {
-      "BTC": { "coingecko": 70905, "binance": 70941.18, "average": 70923.09, "currency": "USD" },
-      "ETH": { "coingecko": 2076.86, "binance": 2078.54, "average": 2077.70, "currency": "USD" },
-      "SOL": { "coingecko": 88.39, "binance": 88.47, "average": 88.43, "currency": "USD" },
-      "KAS": { "coingecko": 0.03079924, "average": 0.03079924, "currency": "USD" },
-      "FLUX": { "coingecko": 0.060236, "average": 0.060236, "currency": "USD" }
+      "BTC": { "coingecko": 70492, "binance": 70512.43, "average": 70502.22, "currency": "USD" },
+      "ETH": { "coingecko": 2069.67, "binance": 2071.27, "average": 2070.47, "currency": "USD" },
+      "SOL": { "coingecko": 87.79, "binance": 87.97, "average": 87.88, "currency": "USD" },
+      "KAS": { "coingecko": 0.03050605, "average": 0.03050605, "currency": "USD" },
+      "FLUX": { "coingecko": 0.060618, "average": 0.060618, "currency": "USD" }
     }
   },
   "changes_from_base": {
-    "BTC": 6.22,
-    "ETH": 6.05,
-    "SOL": 4.60,
-    "KAS": 2.76,
-    "FLUX": -2.70
+    "BTC": 5.59,
+    "ETH": 5.68,
+    "SOL": 3.95,
+    "KAS": 1.79,
+    "FLUX": -2.09
   },
   "changes_from_previous": {
-    "BTC": -0.19,
-    "ETH": -0.19,
-    "SOL": 0.00,
-    "KAS": -0.54,
-    "FLUX": -0.25
+    "BTC": 0.43,
+    "ETH": 0.36,
+    "SOL": 0.26,
+    "KAS": 0.01,
+    "FLUX": 0.76
   },
   "alert_status": {
     "variations_above_5pct_from_base": ["BTC", "ETH"],
     "variations_above_3pct_since_last": [],
     "alert_needed": false,
-    "notes": "Leitura 04:24 - Horário de silêncio ativo (21:00-08:00). BTC e ETH mantêm-se acima de +5% desde a base. Todas as variações desde a última leitura estão abaixo de 3%."
+    "notes": "Leitura 06:24 - Horário de silêncio ativo (21:00-08:00). BTC e ETH mantêm-se acima de +5% desde a base. Variações desde última leitura todas abaixo de 3%."
   }
 }
